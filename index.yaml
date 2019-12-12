@@ -1,0 +1,34 @@
+apiVersion: v1
+entries:
+  gitea:
+  - apiVersion: v2
+    appVersion: 1.9.3
+    created: "2019-12-12T13:56:40.770578878-05:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com
+      tags:
+      - mariadb
+      version: 7.3.0
+    description: Git with a cup of tea
+    digest: 68c5b23e0b73bd63b04f42ea3819dedef14e1da9859dbf971483ee348747009d
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - git
+    - issue tracker
+    - code review
+    - wiki
+    - gitea
+    - gogs
+    maintainers:
+    - email: charlie@charliedrage.com
+      name: Charlie Drage
+    name: gitea
+    sources:
+    - https://github.com/go-gitea/gitea
+    - https://hub.docker.com/r/gitea/gitea/
+    urls:
+    - gitea-1.2.1.tgz
+    version: 1.2.1
+generated: "2019-12-12T13:56:40.766028054-05:00"
