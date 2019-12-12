@@ -10,18 +10,17 @@ mkdir tmp
 cd tmp
 for i in "${charts[@]}"; do
   git clone https://github.com/k8s-land/$i-chart $i
-  helm package -f $i/values.yaml --sign --key "Charlie Drage <charlie@charliedrage.com>" --keyring ~/.gnupg/secring.gpg $i
+  helm package --sign --key "Charlie Drage <charlie@charliedrage.com>" --keyring ~/.gnupg/secring.gpg $i
 done
 
 # Move the files
 cd ..
 mv tmp/*.tgz* .
-rm -rf tmp
+rm -rf tmp/
 
 helm repo index .
 
-#git add .
-#DATE=`date`
-#git commit -m "Update $DATE"
-#git push origin gh-pages
-#git checkout master
+git add .
+DATE=`date`
+git commit -m "Update $DATE"
+git push origin master

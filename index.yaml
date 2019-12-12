@@ -3,7 +3,7 @@ entries:
   gitea:
   - apiVersion: v2
     appVersion: 1.9.3
-    created: "2019-12-12T13:56:40.770578878-05:00"
+    created: "2019-12-12T16:01:46.016761635-05:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -12,7 +12,7 @@ entries:
       - mariadb
       version: 7.3.0
     description: Git with a cup of tea
-    digest: 68c5b23e0b73bd63b04f42ea3819dedef14e1da9859dbf971483ee348747009d
+    digest: a851ec53ca69757a6083deee06fbb6c100435357936e96a02b2c4b3f6d0f30bb
     icon: https://docs.gitea.io/images/gitea.png
     keywords:
     - git
@@ -31,4 +31,4 @@ entries:
     urls:
     - gitea-1.2.1.tgz
     version: 1.2.1
-generated: "2019-12-12T13:56:40.766028054-05:00"
+generated: "2019-12-12T16:01:46.012976736-05:00"
