@@ -12,15 +12,15 @@ Each chart strives to **always** have an emphasis on:
 Add the repo!
 
 ```sh
-helm repo add k8sland https://charts.k8s.land
+helm repo add k8s-land https://charts.k8s.land
 ```
 
 Install a test chart:
 
 ```sh
-helm install gitea k8sland/gitea
+helm install gitea k8s-land/gitea
 ```
 
 ## List of actively maintained charts
 
-- [Gitea](https://github.com/k8s-land/gitea)
+- [Gitea](https://github.com/k8s-land/gitea-chart)
